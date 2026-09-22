@@ -1,3 +1,38 @@
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
+html[saved-theme="dark"] {
+  --light: #1b1b1d !important;
+  --background-primary: #1b1b1d !important;
+  --background-secondary: #1b1b1d !important;
+  --tab-container-background: #1b1b1d !important;
+
+  #quartz-body .sidebar {
+    border-left: none !important;
+    border-right: none !important;
+  }
+
+  /* Títulos rojos */
+  .article-title,
+  article :is(h1, h2, h3) {
+    color: #ed606d !important;
+    text-shadow:
+      0 0 5px rgba(237, 96, 109, 0.4),
+      0 0 14px rgba(237, 96, 109, 0.25) !important;
+  }
+
+  /* Field Manual y títulos de los laterales */
+  .page-title,
+  .page-title a,
+  .sidebar :is(h2, h3) {
+    color: #ebebef !important;
+    text-shadow:
+      0 0 5px rgba(235, 235, 239, 0.3),
+      0 0 12px rgba(235, 235, 239, 0.15) !important;
+  }
+
+  /* Texto y fecha */
+  article > p,
+  .content-meta {
+    text-shadow: 0 0 6px rgba(210, 210, 220, 0.2);
+  }
+}
