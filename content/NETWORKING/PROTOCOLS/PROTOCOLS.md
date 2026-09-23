@@ -11,10 +11,10 @@ cssclasses:
 </div>
 <div class="ark-card-grid">
 <a class="ark-collection-card" href="./67,68---dhcp">
-<span class="ark-card-code">001 / DHCP</span>
+<span class="ark-card-code">001 / 67,68 - DHCP</span>
 <span class="ark-orbit ark-orbit-css ark-orbit-signal" aria-hidden="true"><span class="ark-planet"></span><span class="ark-ring ark-ring-one"><i></i></span><span class="ark-ring ark-ring-two"><i></i></span><span class="ark-scan"></span></span>
 <strong>DHCP</strong>
-<span class="ark-card-description">Address assignment and the DHCP concession process.</span>
+<span class="ark-card-description"></span>
 </a>
 </div>
 </section>
