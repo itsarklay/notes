@@ -208,7 +208,17 @@ article.ark-folder-page + .page-listing {
   margin-top: 1.15rem;
 
   .ark-home-heading {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+
+    > span,
+    > h2 {
+      width: 100%;
+      text-align: center;
+    }
   }
 }
 
