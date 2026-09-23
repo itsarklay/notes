@@ -11,6 +11,7 @@ configuration:
   ignorePatterns:
     - private
     - templates
+    - 999 TEMPLATES
     - .obsidian
   theme:
     fontOrigin: googleFonts
@@ -264,7 +265,7 @@ plugins:
         - tags
         - aliases
       excludedProperties: []
-      hidePropertiesView: false
+      hidePropertiesView: true
       delimiters: ---
       language: yaml
     order: 5

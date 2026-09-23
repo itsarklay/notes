@@ -13,11 +13,12 @@ html[saved-theme="dark"] {
 
   /* Títulos rojos */
   .article-title,
+  #quartz-body .center h1,
   article :is(h1, h2, h3) {
     color: #ed606d !important;
     text-shadow:
-      0 0 5px rgba(237, 96, 109, 0.4),
-      0 0 14px rgba(237, 96, 109, 0.25) !important;
+      0 0 6px rgba(237, 96, 109, 0.62),
+      0 0 18px rgba(237, 96, 109, 0.34) !important;
   }
 
   /* Field Manual y títulos de los laterales */
@@ -195,5 +196,152 @@ html[saved-theme="dark"] {
   .ark-collection-card,
   .ark-orbit {
     transition: none;
+  }
+}
+
+/* ARKLAY FOLDER CARDS */
+article.ark-folder-page + .page-listing {
+  display: none;
+}
+
+.ark-folder-cards {
+  margin-top: 1.15rem;
+
+  .ark-home-heading {
+    text-align: center;
+  }
+}
+
+.ark-orbit-css {
+  position: relative;
+  isolation: isolate;
+  background: radial-gradient(circle at center, rgba(237, 96, 109, 0.12), transparent 55%);
+}
+
+.ark-orbit-css::before,
+.ark-orbit-css::after {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background: rgba(235, 235, 239, 0.7);
+  box-shadow:
+    19px -25px rgba(237, 96, 109, 0.42),
+    -31px -12px rgba(235, 235, 239, 0.3),
+    38px 19px rgba(235, 235, 239, 0.26),
+    -22px 28px rgba(237, 96, 109, 0.3);
+  content: "";
+}
+
+.ark-orbit-css::before {
+  top: 43%;
+  left: 48%;
+}
+
+.ark-orbit-css::after {
+  top: 30%;
+  left: 66%;
+  opacity: 0.55;
+  transform: scale(0.65);
+}
+
+.ark-planet {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+  width: 17px;
+  height: 17px;
+  border: 1px solid rgba(255, 170, 177, 0.72);
+  border-radius: 50%;
+  background: radial-gradient(circle at 32% 28%, #fff 0 4%, #f8828c 21%, #b63440 52%, #21070a 100%);
+  box-shadow:
+    0 0 8px rgba(237, 96, 109, 0.88),
+    0 0 22px rgba(237, 96, 109, 0.28);
+  transform: translate(-50%, -50%);
+}
+
+.ark-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  border: 1px solid rgba(237, 96, 109, 0.42);
+  border-radius: 50%;
+  box-shadow: 0 0 6px rgba(237, 96, 109, 0.12);
+  transform-origin: center;
+
+  i {
+    position: absolute;
+    top: 50%;
+    right: -3px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #f7d4d7;
+    box-shadow:
+      0 0 5px #ed606d,
+      0 0 10px rgba(237, 96, 109, 0.65);
+    transform: translateY(-50%);
+  }
+}
+
+.ark-ring-one {
+  width: 88px;
+  height: 28px;
+  animation: ark-ring-one 8s linear infinite;
+}
+
+.ark-ring-two {
+  width: 66px;
+  height: 42px;
+  border-color: rgba(237, 96, 109, 0.26);
+  animation: ark-ring-two 11s linear infinite reverse;
+
+  i {
+    width: 4px;
+    height: 4px;
+    opacity: 0.82;
+  }
+}
+
+.ark-orbit-eclipse .ark-planet {
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(circle at 34% 30%, #f7d9dc 0 5%, #d74b57 28%, #5d151c 58%, #100507 100%);
+}
+
+.ark-scan {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  width: 96px;
+  height: 62px;
+  border-top: 1px solid rgba(237, 96, 109, 0.48);
+  border-radius: 50%;
+  filter: drop-shadow(0 0 4px rgba(237, 96, 109, 0.45));
+  animation: ark-scan 5.5s linear infinite;
+}
+
+@keyframes ark-ring-one {
+  from { transform: translate(-50%, -50%) rotate(-14deg); }
+  to { transform: translate(-50%, -50%) rotate(346deg); }
+}
+
+@keyframes ark-ring-two {
+  from { transform: translate(-50%, -50%) rotate(38deg); }
+  to { transform: translate(-50%, -50%) rotate(398deg); }
+}
+
+@keyframes ark-scan {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ark-ring,
+  .ark-scan {
+    animation: none;
   }
 }

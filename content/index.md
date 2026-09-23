@@ -5,36 +5,33 @@ description: Personal notes on systems, networking and cybersecurity.
 Personal notes on systems, networking and cybersecurity.
 
 <section class="ark-home" aria-label="Field Manual collections">
-  <div class="ark-home-heading">
-    <span>KNOWLEDGE BASE</span>
-    <h2>Core collections</h2>
-  </div>
-
-  <div class="ark-card-grid">
-    <a class="ark-collection-card" href="./networking">
-      <span class="ark-card-code">001 / NETWORKING</span>
-      <span class="ark-orbit" aria-hidden="true"><canvas data-orbit="system"></canvas></span>
-      <strong>Networking</strong>
-      <span class="ark-card-description">Protocols, services, traffic and infrastructure.</span>
-      <span class="ark-card-meta">02 NOTES <b>↗</b></span>
-    </a>
-
-    <a class="ark-collection-card" href="./networking/protocols">
-      <span class="ark-card-code">002 / PROTOCOLS</span>
-      <span class="ark-orbit" aria-hidden="true"><canvas data-orbit="eclipse"></canvas></span>
-      <strong>Protocols</strong>
-      <span class="ark-card-description">Reference notes for network protocols and services.</span>
-      <span class="ark-card-meta">02 NOTES <b>↗</b></span>
-    </a>
-
-    <a class="ark-collection-card" href="./networking/protocols/67,68---dhcp">
-      <span class="ark-card-code">003 / DHCP</span>
-      <span class="ark-orbit" aria-hidden="true"><canvas data-orbit="signal"></canvas></span>
-      <strong>DHCP</strong>
-      <span class="ark-card-description">Address assignment and the DHCP concession process.</span>
-      <span class="ark-card-meta">FIELD NOTE <b>↗</b></span>
-    </a>
-  </div>
+<div class="ark-home-heading">
+<span>KNOWLEDGE BASE</span>
+<h2>Core collections</h2>
+</div>
+<div class="ark-card-grid">
+<a class="ark-collection-card" href="./networking">
+<span class="ark-card-code">001 / NETWORKING</span>
+<span class="ark-orbit" aria-hidden="true"><canvas data-orbit="system"></canvas></span>
+<strong>Networking</strong>
+<span class="ark-card-description">Protocols, services, traffic and infrastructure.</span>
+<span class="ark-card-meta">02 NOTES <b>↗</b></span>
+</a>
+<a class="ark-collection-card" href="./networking/protocols">
+<span class="ark-card-code">002 / PROTOCOLS</span>
+<span class="ark-orbit" aria-hidden="true"><canvas data-orbit="eclipse"></canvas></span>
+<strong>Protocols</strong>
+<span class="ark-card-description">Reference notes for network protocols and services.</span>
+<span class="ark-card-meta">01 NOTE <b>↗</b></span>
+</a>
+<a class="ark-collection-card" href="./networking/protocols/67,68---dhcp">
+<span class="ark-card-code">003 / DHCP</span>
+<span class="ark-orbit" aria-hidden="true"><canvas data-orbit="signal"></canvas></span>
+<strong>DHCP</strong>
+<span class="ark-card-description">Address assignment and the DHCP concession process.</span>
+<span class="ark-card-meta">FIELD NOTE <b>↗</b></span>
+</a>
+</div>
 </section>
 
 <script>
