@@ -15,7 +15,6 @@ cssclasses:
 <span class="ark-orbit ark-orbit-css ark-orbit-eclipse" aria-hidden="true"><span class="ark-planet"></span><span class="ark-ring ark-ring-one"><i></i></span><span class="ark-ring ark-ring-two"><i></i></span></span>
 <strong>Protocols</strong>
 <span class="ark-card-description">Reference notes for network protocols and services.</span>
-<span class="ark-card-meta">01 NOTE <b>↗</b></span>
 </a>
 </div>
 </section>

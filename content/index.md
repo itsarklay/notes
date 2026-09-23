@@ -15,7 +15,6 @@ Personal notes on systems, networking and cybersecurity.
 <span class="ark-orbit" aria-hidden="true"><canvas data-orbit="system"></canvas></span>
 <strong>Networking</strong>
 <span class="ark-card-description">Protocols, services, traffic and infrastructure.</span>
-<span class="ark-card-meta">01 COLLECTION <b>↗</b></span>
 </a>
 </div>
 </section>
