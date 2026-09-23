@@ -10,7 +10,7 @@ Personal notes on systems, networking and cybersecurity.
 <h2>Core collections</h2>
 </div>
 <div class="ark-card-grid">
-<a class="ark-collection-card" href="./networking">
+<a class="ark-collection-card" href="./networking/">
 <span class="ark-card-code">001 / NETWORKING</span>
 <span class="ark-orbit" aria-hidden="true"><canvas data-orbit="system"></canvas></span>
 <strong>Networking</strong>

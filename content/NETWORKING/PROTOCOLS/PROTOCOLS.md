@@ -1,5 +1,4 @@
 ---
-Primary_category: "[[NETWORKING]]"
 title: PROTOCOLS
 description: Reference notes for network protocols and services.
 cssclasses:
