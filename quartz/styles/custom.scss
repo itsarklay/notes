@@ -357,3 +357,16 @@ article.ark-folder-page + .page-listing {
     animation: none;
   }
 }
+/* Clean note links */
+article a.internal {
+  padding: 0 !important;
+  border-radius: 0 !important;
+  background-color: transparent !important;
+  text-decoration: none !important;
+}
+
+article a.internal:hover,
+article a.internal:focus-visible {
+  color: #ed606d !important;
+  text-shadow: 0 0 8px rgba(237, 96, 109, 0.32);
+}
