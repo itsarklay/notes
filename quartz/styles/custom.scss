@@ -208,7 +208,13 @@ article.ark-folder-page + .page-listing {
 }
 
 .ark-folder-cards {
+  width: 100%;
+  align-self: stretch;
   margin-top: 1.15rem;
+
+  .ark-home-heading {
+    width: 100%;
+  }
 }
 
 .ark-orbit-css {
