@@ -36,3 +36,164 @@ html[saved-theme="dark"] {
     text-shadow: 0 0 6px rgba(210, 210, 220, 0.2);
   }
 }
+
+/* Arklay home collections */
+.ark-home {
+  margin-top: 2rem;
+}
+
+.ark-home-heading {
+  margin-bottom: 1rem;
+
+  > span {
+    color: #ed606d;
+    font-family: var(--codeFont);
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+  }
+
+  > h2 {
+    margin: 0.3rem 0 0;
+  }
+}
+
+.ark-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(175px, 215px));
+  gap: 0.8rem;
+  justify-content: center;
+}
+
+.ark-collection-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 250px;
+  padding: 0.95rem;
+  overflow: hidden;
+  color: var(--darkgray);
+  background:
+    radial-gradient(circle at 50% 38%, rgba(237, 96, 109, 0.065), transparent 35%),
+    linear-gradient(145deg, color-mix(in srgb, var(--light) 94%, #ed606d 6%), var(--light));
+  border: 1px solid var(--lightgray);
+  border-top: 2px solid #ed606d;
+  text-decoration: none;
+  transition:
+    background 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease;
+
+  &::before {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background:
+      radial-gradient(circle at 18% 26%, rgba(235, 235, 239, 0.32) 0 1px, transparent 1.5px),
+      radial-gradient(circle at 76% 18%, rgba(237, 96, 109, 0.42) 0 1px, transparent 1.6px),
+      radial-gradient(circle at 88% 61%, rgba(235, 235, 239, 0.22) 0 1px, transparent 1.4px),
+      radial-gradient(circle at 29% 72%, rgba(237, 96, 109, 0.22) 0 1px, transparent 1.4px);
+    opacity: 0.7;
+    content: "";
+  }
+
+  > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  &:hover,
+  &:focus-visible {
+    color: var(--darkgray);
+    background:
+      radial-gradient(circle at 50% 38%, rgba(237, 96, 109, 0.11), transparent 40%),
+      linear-gradient(145deg, color-mix(in srgb, var(--light) 90%, #ed606d 10%), var(--light));
+    border-color: #ed606d;
+    box-shadow:
+      0 0 24px rgba(237, 96, 109, 0.16),
+      inset 0 0 22px rgba(237, 96, 109, 0.035);
+    transform: translateY(-2px);
+  }
+
+  > strong {
+    width: 100%;
+    margin-bottom: 0.35rem;
+    color: var(--dark);
+    font-size: 1.05rem;
+    font-weight: 500;
+    text-align: center;
+    text-shadow: 0 0 8px rgba(235, 235, 239, 0.1);
+  }
+}
+
+.ark-card-code,
+.ark-card-meta {
+  font-family: var(--codeFont);
+  font-size: 0.68rem;
+  letter-spacing: 0.05em;
+}
+
+.ark-card-code {
+  color: #ed606d;
+}
+
+.ark-card-description {
+  width: 100%;
+  color: var(--gray);
+  font-size: 0.76rem;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.ark-card-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 1rem;
+  color: var(--gray);
+
+  b {
+    color: #ed606d;
+    font-weight: 400;
+  }
+}
+
+.ark-orbit {
+  display: block;
+  width: 112px;
+  height: 96px;
+  margin: 0.45rem auto 0.35rem;
+  filter: drop-shadow(0 0 7px rgba(237, 96, 109, 0.2));
+  transition:
+    filter 180ms ease,
+    transform 180ms ease;
+
+  canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.ark-collection-card:hover .ark-orbit,
+.ark-collection-card:focus-visible .ark-orbit {
+  filter: drop-shadow(0 0 12px rgba(237, 96, 109, 0.48));
+  transform: scale(1.045);
+}
+
+@media (max-width: 600px) {
+  .ark-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ark-collection-card {
+    min-height: 235px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ark-collection-card,
+  .ark-orbit {
+    transition: none;
+  }
+}
