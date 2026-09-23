@@ -13,6 +13,7 @@ configuration:
     - templates
     - 999 TEMPLATES
     - '999 TEMPLATES/**'
+    - '999 Templates.md'
     - .obsidian
   theme:
     fontOrigin: googleFonts

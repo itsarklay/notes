@@ -14,11 +14,18 @@ html[saved-theme="dark"] {
   /* Títulos rojos */
   .article-title,
   #quartz-body .center h1,
-  article :is(h1, h2, h3) {
+  article :is(h1, h2, h3, h4) {
     color: #ed606d !important;
     text-shadow:
       0 0 6px rgba(237, 96, 109, 0.62),
       0 0 18px rgba(237, 96, 109, 0.34) !important;
+  }
+  /* Subtítulos menores en blanco con brillo suave */
+  article :is(h5, h6) {
+    color: #ebebef !important;
+    text-shadow:
+      0 0 5px rgba(235, 235, 239, 0.34),
+      0 0 12px rgba(235, 235, 239, 0.18) !important;
   }
 
   /* Field Manual y títulos de los laterales */
