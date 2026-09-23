@@ -44,17 +44,26 @@ html[saved-theme="dark"] {
 }
 
 .ark-home-heading {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 1rem;
+  text-align: center;
 
   > span {
+    width: 100%;
     color: #ed606d;
     font-family: var(--codeFont);
     font-size: 0.72rem;
     letter-spacing: 0.12em;
+    text-align: center;
   }
 
   > h2 {
+    width: 100%;
     margin: 0.3rem 0 0;
+    text-align: center;
   }
 }
 
@@ -206,20 +215,6 @@ article.ark-folder-page + .page-listing {
 
 .ark-folder-cards {
   margin-top: 1.15rem;
-
-  .ark-home-heading {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-
-    > span,
-    > h2 {
-      width: 100%;
-      text-align: center;
-    }
-  }
 }
 
 .ark-orbit-css {

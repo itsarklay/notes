@@ -7,7 +7,7 @@ cssclasses:
 <section class="ark-home ark-folder-cards" aria-label="Protocol notes">
 <div class="ark-home-heading">
 <span>PROTOCOLS</span>
-<h2>Field notes</h2>
+<h2>Components</h2>
 </div>
 <div class="ark-card-grid">
 <a class="ark-collection-card" href="./67,68---dhcp">
