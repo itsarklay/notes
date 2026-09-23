@@ -12,6 +12,7 @@ configuration:
     - private
     - templates
     - 999 TEMPLATES
+    - '999 TEMPLATES/**'
     - .obsidian
   theme:
     fontOrigin: googleFonts

@@ -15,21 +15,7 @@ Personal notes on systems, networking and cybersecurity.
 <span class="ark-orbit" aria-hidden="true"><canvas data-orbit="system"></canvas></span>
 <strong>Networking</strong>
 <span class="ark-card-description">Protocols, services, traffic and infrastructure.</span>
-<span class="ark-card-meta">02 NOTES <b>↗</b></span>
-</a>
-<a class="ark-collection-card" href="./networking/protocols">
-<span class="ark-card-code">002 / PROTOCOLS</span>
-<span class="ark-orbit" aria-hidden="true"><canvas data-orbit="eclipse"></canvas></span>
-<strong>Protocols</strong>
-<span class="ark-card-description">Reference notes for network protocols and services.</span>
-<span class="ark-card-meta">01 NOTE <b>↗</b></span>
-</a>
-<a class="ark-collection-card" href="./networking/protocols/67,68---dhcp">
-<span class="ark-card-code">003 / DHCP</span>
-<span class="ark-orbit" aria-hidden="true"><canvas data-orbit="signal"></canvas></span>
-<strong>DHCP</strong>
-<span class="ark-card-description">Address assignment and the DHCP concession process.</span>
-<span class="ark-card-meta">FIELD NOTE <b>↗</b></span>
+<span class="ark-card-meta">01 COLLECTION <b>↗</b></span>
 </a>
 </div>
 </section>
