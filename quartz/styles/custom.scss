@@ -95,7 +95,7 @@ html[saved-theme="dark"] {
       )
       border-box;
   border: 2px solid transparent;
-  border-radius: 13px;
+  border-radius: 18px;
   box-shadow:
     0 8px 24px rgba(0, 0, 0, 0.16),
     0 0 10px rgba(237, 96, 109, 0.07),
@@ -110,6 +110,7 @@ html[saved-theme="dark"] {
     position: absolute;
     inset: 0;
     z-index: 0;
+    border-radius: inherit;
     background:
       radial-gradient(circle at 18% 26%, rgba(235, 235, 239, 0.32) 0 1px, transparent 1.5px),
       radial-gradient(circle at 76% 18%, rgba(237, 96, 109, 0.42) 0 1px, transparent 1.6px),
@@ -378,16 +379,26 @@ article.ark-folder-page + .page-listing {
     animation: none;
   }
 }
+/* Keep every collection card rounded, regardless of Quartz link resolution */
+article .ark-card-grid > a.ark-collection-card {
+  overflow: hidden !important;
+  border-radius: 18px !important;
+}
+
+article .ark-card-grid > a.ark-collection-card::before {
+  border-radius: inherit;
+}
+
 /* Clean note links */
-article a.internal {
+article a.internal:not(.ark-collection-card) {
   padding: 0 !important;
   border-radius: 0 !important;
   background-color: transparent !important;
   text-decoration: none !important;
 }
 
-article a.internal:hover,
-article a.internal:focus-visible {
+article a.internal:not(.ark-collection-card):hover,
+article a.internal:not(.ark-collection-card):focus-visible {
   color: #ed606d !important;
   text-shadow: 0 0 8px rgba(237, 96, 109, 0.32);
 }
