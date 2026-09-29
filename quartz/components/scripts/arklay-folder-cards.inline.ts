@@ -28,7 +28,7 @@ function createCard(source: HTMLAnchorElement, index: number): HTMLAnchorElement
 
   const code = document.createElement("span")
   code.className = "ark-card-code"
-  code.textContent = `${String(index + 1).padStart(3, "0")} / ${title.toUpperCase()}`
+  code.textContent = title.toUpperCase()
 
   const name = document.createElement("strong")
   name.textContent = displayTitle(title)
