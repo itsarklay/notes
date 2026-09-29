@@ -383,7 +383,6 @@ article.ark-folder-page + .page-listing {
 /* Clean note links */
 article a.internal:not(.ark-collection-card) {
   padding: 0 !important;
-  border-radius: 0 !important;
   background-color: transparent !important;
   text-decoration: none !important;
 }
@@ -394,11 +393,11 @@ article a.internal:not(.ark-collection-card):focus-visible {
   text-shadow: 0 0 8px rgba(237, 96, 109, 0.32);
 }
 /* Force smooth corners after every generic Quartz link rule */
-html body article .ark-card-grid .ark-collection-card {
+.ark-card-grid .ark-collection-card {
   overflow: hidden !important;
   border-radius: 18px !important;
 }
 
-html body article .ark-card-grid .ark-collection-card::before {
+.ark-card-grid .ark-collection-card::before {
   border-radius: 16px !important;
 }
