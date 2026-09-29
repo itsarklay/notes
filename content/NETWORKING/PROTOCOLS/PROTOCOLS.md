@@ -16,5 +16,11 @@ cssclasses:
 <strong>DHCP</strong>
 <span class="ark-card-description"></span>
 </a>
+<a class="ark-collection-card" href="./53---dns">
+<span class="ark-card-code">002 / 53 - DNS</span>
+<span class="ark-orbit ark-orbit-css ark-orbit-eclipse" aria-hidden="true"><span class="ark-planet"></span><span class="ark-ring ark-ring-one"><i></i></span><span class="ark-ring ark-ring-two"><i></i></span></span>
+<strong>DNS</strong>
+<span class="ark-card-description"></span>
+</a>
 </div>
 </section>
