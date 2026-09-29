@@ -70,7 +70,7 @@ html[saved-theme="dark"] {
 
 .ark-card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 285px));
+  grid-template-columns: repeat(auto-fit, minmax(205px, 225px));
   gap: 0.95rem;
   justify-content: center;
 }
@@ -79,18 +79,30 @@ html[saved-theme="dark"] {
   position: relative;
   display: flex;
   flex-direction: column;
-  min-height: 225px;
+  min-height: 285px;
   padding: 0.95rem;
   overflow: hidden;
   color: var(--darkgray);
   background:
-    radial-gradient(circle at 50% 38%, rgba(237, 96, 109, 0.065), transparent 35%),
-    linear-gradient(145deg, color-mix(in srgb, var(--light) 94%, #ed606d 6%), var(--light));
-  border: 2px solid rgba(237, 96, 109, 0.72);
+    radial-gradient(circle at 50% 38%, rgba(237, 96, 109, 0.065), transparent 35%) padding-box,
+    linear-gradient(145deg, color-mix(in srgb, var(--light) 94%, #ed606d 6%), var(--light)) padding-box,
+    linear-gradient(
+        145deg,
+        rgba(255, 132, 143, 0.88),
+        rgba(237, 96, 109, 0.42) 34%,
+        rgba(237, 96, 109, 0.18) 66%,
+        rgba(255, 132, 143, 0.7)
+      )
+      border-box;
+  border: 2px solid transparent;
+  border-radius: 13px;
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.16),
+    0 0 10px rgba(237, 96, 109, 0.07),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.018);
   text-decoration: none;
   transition:
     background 180ms ease,
-    border-color 180ms ease,
     box-shadow 180ms ease,
     transform 180ms ease;
 
@@ -116,11 +128,19 @@ html[saved-theme="dark"] {
   &:focus-visible {
     color: var(--darkgray);
     background:
-      radial-gradient(circle at 50% 38%, rgba(237, 96, 109, 0.11), transparent 40%),
-      linear-gradient(145deg, color-mix(in srgb, var(--light) 90%, #ed606d 10%), var(--light));
-    border-color: #ed606d;
+      radial-gradient(circle at 50% 38%, rgba(237, 96, 109, 0.11), transparent 40%) padding-box,
+      linear-gradient(145deg, color-mix(in srgb, var(--light) 90%, #ed606d 10%), var(--light)) padding-box,
+      linear-gradient(
+          145deg,
+          rgba(255, 151, 160, 0.98),
+          rgba(237, 96, 109, 0.58) 36%,
+          rgba(237, 96, 109, 0.28) 64%,
+          rgba(255, 137, 148, 0.88)
+        )
+        border-box;
     box-shadow:
-      0 0 24px rgba(237, 96, 109, 0.16),
+      0 10px 28px rgba(0, 0, 0, 0.2),
+      0 0 20px rgba(237, 96, 109, 0.18),
       inset 0 0 22px rgba(237, 96, 109, 0.035);
     transform: translateY(-2px);
   }
@@ -195,11 +215,11 @@ html[saved-theme="dark"] {
 
 @media (max-width: 600px) {
   .ark-card-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(205px, 225px);
   }
 
   .ark-collection-card {
-    min-height: 220px;
+    min-height: 285px;
   }
 }
 
