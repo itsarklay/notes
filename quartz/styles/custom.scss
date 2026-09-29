@@ -379,15 +379,6 @@ article.ark-folder-page + .page-listing {
     animation: none;
   }
 }
-/* Keep every collection card rounded, regardless of Quartz link resolution */
-article .ark-card-grid > a.ark-collection-card {
-  overflow: hidden !important;
-  border-radius: 18px !important;
-}
-
-article .ark-card-grid > a.ark-collection-card::before {
-  border-radius: inherit;
-}
 
 /* Clean note links */
 article a.internal:not(.ark-collection-card) {
@@ -401,4 +392,13 @@ article a.internal:not(.ark-collection-card):hover,
 article a.internal:not(.ark-collection-card):focus-visible {
   color: #ed606d !important;
   text-shadow: 0 0 8px rgba(237, 96, 109, 0.32);
+}
+/* Force smooth corners after every generic Quartz link rule */
+html body article .ark-card-grid .ark-collection-card {
+  overflow: hidden !important;
+  border-radius: 18px !important;
+}
+
+html body article .ark-card-grid .ark-collection-card::before {
+  border-radius: 16px !important;
 }
