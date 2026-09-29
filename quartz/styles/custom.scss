@@ -233,7 +233,21 @@ html[saved-theme="dark"] {
 
 /* ARKLAY FOLDER CARDS */
 article.ark-folder-page + .page-listing {
-  display: none;
+  width: 100%;
+  margin-top: 0.8rem;
+
+  > p {
+    display: none;
+  }
+
+  .section-ul {
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.ark-auto-card-item {
+  display: contents;
 }
 
 .ark-folder-cards {

@@ -12,7 +12,7 @@ configuration:
     - private
     - templates
     - 999templates
-    - '999templates/**'
+    - "999templates/**"
     - .obsidian
   theme:
     fontOrigin: googleFonts
@@ -163,6 +163,9 @@ plugins:
     enabled: true
   - source: "@quartz-community/folder-page"
     enabled: true
+    options:
+      showFolderCount: false
+      showSubfolders: false
   - source: "@quartz-community/tag-page"
     enabled: true
   - source: "@quartz-community/explorer"
